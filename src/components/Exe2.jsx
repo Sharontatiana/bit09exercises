@@ -6,6 +6,7 @@ import Alert from "react-bootstrap/Alert";
 export const Exe2 = () => {
   const [img, setimg] = useState(null);
   const [cargando, setCargando] = useState(false);
+  const [error, seterror] = useState(false);
 
   const handleClick = () => {
     setCargando(true);
