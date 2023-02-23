@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
+import Alert from "react-bootstrap/Alert";
 
 export const Exe2 = () => {
   const [img, setimg] = useState(null);
   const [cargando, setCargando] = useState(false);
-  const [error, seterror] = useState(false);
 
   const handleClick = () => {
     setCargando(true);
@@ -34,8 +34,10 @@ export const Exe2 = () => {
           onClick={handleClick}>
           Mostar Img
         </Button>
-        {  error ? ( error  && (
-          <p>Ha ocurrido un error al cargar la imagen.</p>)
+        {error ? (
+          <Alert variant="danger">
+            Ha ocurrido un error al cargar la imagen
+          </Alert>
         ) : cargando ? (
           <Spinner animation="grow" variant="warning" />
         ) : (
