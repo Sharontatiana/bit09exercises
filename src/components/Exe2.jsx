@@ -34,8 +34,8 @@ export const Exe2 = () => {
           onClick={handleClick}>
           Mostar Img
         </Button>
-        {error ? (
-          <p>Ha ocurrido un error al cargar la imagen.</p>
+        {  error ? ( error  && (
+          <p>Ha ocurrido un error al cargar la imagen.</p>)
         ) : cargando ? (
           <Spinner animation="grow" variant="warning" />
         ) : (
