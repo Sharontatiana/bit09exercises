@@ -10,7 +10,10 @@ export const Inicio = () => {
           Sharon Monroy
         </Card.Header>
         <Card.Body className="d-flex flex-column justify-center">
-          <Card.Img className="w-50 mx-auto d-block" src="src\img\me.jpg" />
+          <Card.Img
+            className="w-50 mx-auto d-block"
+            src="https://sharontatiana.github.io/bit07me/img/me.jpg"
+          />
         </Card.Body>
       </Card>
     </>
